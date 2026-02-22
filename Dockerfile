@@ -19,8 +19,6 @@ RUN composer install --no-dev --optimize-autoloader
 # create sqlite database file
 RUN mkdir -p database && touch database/database.sqlite
 
-# generate key
-RUN php artisan key:generate --force
 
 EXPOSE 8000
 
